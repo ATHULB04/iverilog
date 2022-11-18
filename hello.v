@@ -1,4 +1,4 @@
-module myModule();
+module hello();
 
 initial
   begin
