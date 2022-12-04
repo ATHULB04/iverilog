@@ -4,9 +4,9 @@
 :vpi_module "system";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_012F1740 .scope module, "hello" "hello" 2 1;
+S_013C4680 .scope module, "hello" "hello" 2 1;
  .timescale 0 0;
-    .scope S_012F1740;
+    .scope S_013C4680;
 T_0 ;
     %vpi_call 2 5 "$display", "Hello World!";
     %end;
