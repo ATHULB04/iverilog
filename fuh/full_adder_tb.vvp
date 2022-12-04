@@ -1,0 +1,92 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_013DD8E0 .scope module, "full_adder_tb" "full_adder_tb" 2 2;
+ .timescale 0 0;
+v012D4D50_0 .var "a", 0 0;
+v012D52D0_0 .var "b", 0 0;
+v012D4F60_0 .var "c", 0 0;
+v012D5118_0 .net "carry", 0 0, L_012D55D8; 1 drivers
+v012D5380_0 .net "sum", 0 0, L_012D5728; 1 drivers
+S_013DDA78 .scope module, "uut" "full_adder" 2 5, 3 1, S_013DD8E0;
+ .timescale 0 0;
+L_012D55D8 .functor OR 1, L_012D5648, L_012D5450, C4<0>, C4<0>;
+v013D31C8_0 .net "a", 0 0, v012D4D50_0; 1 drivers
+v012D4E58_0 .net "b", 0 0, v012D52D0_0; 1 drivers
+v012D5328_0 .net "c", 0 0, v012D4F60_0; 1 drivers
+v012D5278_0 .alias "carry", 0 0, v012D5118_0;
+v012D4EB0_0 .alias "sum", 0 0, v012D5380_0;
+v012D4F08_0 .net "x", 0 0, L_012D57D0; 1 drivers
+v012D5170_0 .net "y", 0 0, L_012D5648; 1 drivers
+v012D51C8_0 .net "z", 0 0, L_012D5450; 1 drivers
+S_013DD4A0 .scope module, "h1" "half_adder" 3 5, 3 10, S_013DDA78;
+ .timescale 0 0;
+L_012D57D0 .functor XOR 1, v012D4D50_0, v012D52D0_0, C4<0>, C4<0>;
+L_012D5648 .functor AND 1, v012D4D50_0, v012D52D0_0, C4<1>, C4<1>;
+v013D45F0_0 .alias "a", 0 0, v013D31C8_0;
+v013D4648_0 .alias "b", 0 0, v012D4E58_0;
+v013D46A0_0 .alias "c", 0 0, v012D5170_0;
+v013D3170_0 .alias "s", 0 0, v012D4F08_0;
+S_013DD5B0 .scope module, "h2" "half_adder" 3 6, 3 10, S_013DDA78;
+ .timescale 0 0;
+L_012D5728 .functor XOR 1, L_012D57D0, v012D4F60_0, C4<0>, C4<0>;
+L_012D5450 .functor AND 1, L_012D57D0, v012D4F60_0, C4<1>, C4<1>;
+v013DE1C0_0 .alias "a", 0 0, v012D4F08_0;
+v013D3F80_0 .alias "b", 0 0, v012D5328_0;
+v013D3FD8_0 .alias "c", 0 0, v012D51C8_0;
+v013D4030_0 .alias "s", 0 0, v012D5380_0;
+    .scope S_013DD8E0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "full_adder_tb.vcd";
+    %vpi_call 2 10 "$dumpvars", 1'sb0, S_013DD8E0;
+    %end;
+    .thread T_0;
+    .scope S_013DD8E0;
+T_1 ;
+    %set/v v012D4D50_0, 0, 1;
+    %set/v v012D52D0_0, 0, 1;
+    %set/v v012D4F60_0, 0, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 0, 1;
+    %set/v v012D52D0_0, 0, 1;
+    %set/v v012D4F60_0, 1, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 0, 1;
+    %set/v v012D52D0_0, 1, 1;
+    %set/v v012D4F60_0, 0, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 0, 1;
+    %set/v v012D52D0_0, 1, 1;
+    %set/v v012D4F60_0, 1, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 1, 1;
+    %set/v v012D52D0_0, 0, 1;
+    %set/v v012D4F60_0, 0, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 1, 1;
+    %set/v v012D52D0_0, 0, 1;
+    %set/v v012D4F60_0, 1, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 1, 1;
+    %set/v v012D52D0_0, 1, 1;
+    %set/v v012D4F60_0, 0, 1;
+    %delay 10, 0;
+    %set/v v012D4D50_0, 1, 1;
+    %set/v v012D52D0_0, 1, 1;
+    %set/v v012D4F60_0, 1, 1;
+    %end;
+    .thread T_1;
+    .scope S_013DD8E0;
+T_2 ;
+    %vpi_call 2 30 "$monitor", "a=%d,b=%d,c=%d,carry=%d,sum=%d", v012D4D50_0, v012D52D0_0, v012D4F60_0, v012D5118_0, v012D5380_0;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "full_adder_tb.v";
+    "./full_adder.v";
