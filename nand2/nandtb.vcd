@@ -1,0 +1,65 @@
+$date
+	Mon Dec 05 14:25:26 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nandtb $end
+$var wire 1 ! f1 $end
+$var wire 1 " f2 $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$scope module uut $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( c $end
+$var wire 1 ! f1 $end
+$var wire 1 " f2 $end
+$var wire 1 ) m1 $end
+$var wire 1 * m2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+1)
+z(
+0'
+0&
+0%
+0$
+0#
+1"
+x!
+$end
+#200
+1%
+#400
+x*
+1$
+1'
+#800
+1*
+0"
+0%
+0$
+0'
+1#
+1&
+#1000
+1%
+#1200
+1!
+x"
+0)
+x*
+0%
+1$
+1'
+#1400
+1%

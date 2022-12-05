@@ -1,0 +1,80 @@
+$date
+	Mon Dec 05 13:23:44 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module nortb $end
+$var wire 1 ! f3 $end
+$var wire 1 " f4 $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$scope module uut $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( c $end
+$var wire 1 ! f3 $end
+$var wire 1 " f4 $end
+$var wire 1 ) m3 $end
+$var wire 1 * m4 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+1)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#200
+1"
+0*
+1%
+1(
+#400
+1!
+0)
+0%
+0(
+1$
+1'
+#600
+0!
+1%
+1(
+#800
+1!
+1*
+0"
+0%
+0(
+0$
+0'
+1#
+1&
+#1000
+0!
+0*
+1%
+1(
+#1200
+1!
+0%
+0(
+1$
+1'
+#1400
+0!
+1%
+1(
