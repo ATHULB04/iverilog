@@ -1,0 +1,119 @@
+$date
+	Wed Aug 28 17:57:09 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module half_adder_fsm_tb $end
+$var wire 1 ! sum $end
+$var wire 1 " carry $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % clk $end
+$var reg 1 & rst $end
+$scope module uut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % clk $end
+$var wire 1 & rst $end
+$var parameter 2 ' S0 $end
+$var parameter 2 ( S1 $end
+$var parameter 2 ) S2 $end
+$var parameter 2 * S3 $end
+$var reg 1 " carry $end
+$var reg 2 + current_state [1:0] $end
+$var reg 2 , next_state [1:0] $end
+$var reg 1 ! sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11 *
+b10 )
+b1 (
+b0 '
+$end
+#0
+$dumpvars
+b0 ,
+b0 +
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1%
+#10
+0%
+0&
+#15
+1%
+#20
+0%
+1&
+#25
+1%
+#30
+0%
+0&
+#35
+1%
+#40
+b1 ,
+0%
+1&
+1$
+#45
+1%
+#50
+0%
+0&
+#55
+1!
+b1 +
+1%
+#60
+0!
+b0 +
+b10 ,
+0%
+1&
+0$
+1#
+#65
+1%
+#70
+0%
+0&
+#75
+1!
+b10 +
+1%
+#80
+0!
+b0 +
+b11 ,
+0%
+1&
+1$
+#85
+1%
+#90
+0%
+0&
+#95
+1"
+b11 +
+1%
+#100
+0"
+b0 +
+0%
+1&
